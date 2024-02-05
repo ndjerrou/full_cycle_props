@@ -5,7 +5,7 @@ const App = () => {
     <>
       <h1>hi from App</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-        <Square
+        {/* <Square
           name='uncarre'
           age={10}
           obj={{ uneprop: 'une value' }}
@@ -13,8 +13,11 @@ const App = () => {
           iamabooleannewversion
           sendinganarray={['el1', 'el2']}
           test={null}
-        />
-        {/* <Square /> */}
+        /> */}
+        <Square bgColor='gold' />
+        <Square bgColor='red' />
+        <Square bgColor='purple' />
+        <Square />
       </div>
     </>
   );
