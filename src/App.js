@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Square from './components/Square';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>hi from App</h1>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+        <Square
+          name='uncarre'
+          age={10}
+          obj={{ uneprop: 'une value' }}
+          iamaboolean={true}
+          iamabooleannewversion
+          sendinganarray={['el1', 'el2']}
+          test={null}
+        />
+        {/* <Square /> */}
+      </div>
+    </>
   );
-}
+};
 
 export default App;
