@@ -1,4 +1,5 @@
-const Square = ({ bgColor }) => {
+const Square = ({ bgColor, id, isDecorate }) => {
+  console.log(id);
   return (
     <>
       <div
@@ -8,6 +9,7 @@ const Square = ({ bgColor }) => {
           backgroundColor: bgColor ?? 'black',
           borderRadius: '6px',
           padding: '5px',
+          border: isDecorate ? '5px dotted green' : null,
         }}
       >
         Square
